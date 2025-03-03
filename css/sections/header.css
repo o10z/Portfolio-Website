@@ -1,0 +1,96 @@
+/* Base Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 1920px;
+    padding: 20px 10%;
+    background-color: black;
+    box-shadow: 0 0 20px var(--grey-700);
+    z-index: 100;
+}
+
+/* Logo */
+.header-logo {
+    letter-spacing: 1px;
+    color: white;
+}
+
+/* Default Navbar (for large screens) */
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-family: var(--headingFont);
+    margin-left: 35px;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.navbar a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.navbar .active {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* Mobile Menu Icon */
+.menu-icon {
+    display: none;  /* Hidden by default on large screens */
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Hide checkbox input */
+.menu-toggle {
+    display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+    /* Make navbar a column for mobile */
+    .navbar {
+        display: none; /* Hide menu initially */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        padding: 20px 0;
+        text-align: center;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar a {
+        display: block;
+        margin: 15px 0;
+        font-size: 1.2rem;
+    }
+
+    /* Show menu icon */
+    .menu-icon {
+        display: block;
+    }
+
+    /* When the menu toggle is checked, show the menu */
+    .menu-toggle:checked + .menu-icon + .navbar {
+        display: flex;
+    }
+
+    .header-logo{
+        tab-size: 1rem;
+    }
+}

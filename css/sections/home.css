@@ -1,0 +1,159 @@
+.home {
+    position: relative;
+    color: var(--color-black);
+
+    min-height: 100vh;
+    padding: 0 10%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid var(--color-black);
+}
+
+
+
+.home-content {
+    max-width: 600px;
+    flex: 1;
+}
+
+.home-content p{
+    margin: 1rem 0;
+}
+
+.home-content__icons {
+    display: flex;
+    gap: 3rem;
+    margin-right: auto;
+}
+
+.home-content__icons i{
+    color: var(--color-black);
+    object-fit: contain;
+    font-size: 2.5rem;
+    cursor: pointer;
+
+    background: transparent;
+    border-radius: 50%;
+    text-decoration: none;
+
+    animation: slideTop 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+.home-content__icons i:hover{
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.home-image{
+    flex: 1;
+    margin-left: 50px;
+    max-width: 500px;
+}
+
+.home-image img{
+    object-fit: contain;
+    display: block;
+    width: 100%;
+}
+
+.text{
+    color: var(--primary-color);
+}
+
+
+.home-arrow{
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    bottom: 10%;
+    right: 50%;
+}
+
+.home-arrow p{
+    animation: pointdown 2000ms infinite alternate-reverse;
+    color: var(--color-black);
+    font-weight: bold;
+}
+
+.home-arrow :hover{
+    color: var(--primary-color);
+}
+
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15%;
+        width: 100vw;
+    }
+
+    .home-content {
+        max-width: 100%;
+    }
+
+    .home-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-content h3 {
+        font-size: 1.8rem;
+    }
+
+    .home-content p {
+        font-size: 1rem;
+    }
+
+    .home-content__icons {
+        justify-content: center;
+    }
+
+    .hero-image {
+        max-width: 20%;
+        margin-top: 20px;
+    }
+
+    .hero-image img {
+        max-width: 250px;
+    }
+
+    .home-arrow {
+        bottom: 5%;
+        right: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30%;
+        width: 100%;
+    }
+    
+    .home-content h1 {
+        font-size: 2rem;
+    }
+
+    .home-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .home-content p {
+        font-size: 0.9rem;
+    }
+
+    .hero-image img {
+        max-width: 200px;
+    }
+}

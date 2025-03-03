@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ======== Meta Tags SEO ========-->
+    <meta
+      name="keywords"
+      content="Portfolio, Web Developer, Python Developer, Software Engineer, Python Full Stack Developer"
+    />
+
+    <!-- ========favicon ========-->
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon" />
+
+    <!-- ======== Stylesheet ========-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- ======== Fontawesome ========-->
+    <script
+      src="https://kit.fontawesome.com/f135b19bd5.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ======== TailwindCSS ========-->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+    <!--========TypedJS===== -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- ========Title ========-->
+    <title>Ola Idebi</title>
+  </head>
+  <body>
+    <!-- ======== Navbar Section Start ======== -->
+    <header class="header" id="header">
+      <div class="header-logo">
+        <h1>Ola Idebi</h1>
+      </div>
+      <div class="header-menu">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon"
+          ><i class="fa-solid fa-bars"></i
+        ></label>
+        <nav class="navbar" id="myLinks">
+          <a href="#Home" style="--i: 1">Home</a>
+          <a href="#About" style="--i: 2">About</a>
+          <a href="#Skills" style="--i: 3">Skills</a>
+          <a href="#Projects" style="--i: 4">Projects</a>
+          <a href="#Contact" style="--i: 5">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <!-- Navbar Section Start End -->
+    <main class="page">
+      <!-- ======== Home Section Start ======== -->
+      <section class="home" id="Home">
+        <div class="home-content">
+          <h1>Hi, i am Ola Idebi</h1>
+          <h3 style="--i: 6">Aspiring <span class="text"></span> Developer</h3>
+          <p>Find out more about me..</p>
+          <div class="home-content__icons">
+            <a href="https://www.linkedin.com/in/ola-idebi/" target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/o10z" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <i class="fa-solid fa-file"></i>
+          </div>
+        </div>
+
+        <div class="home-image">
+          <img
+            src="image/pfp.png"
+            alt="Image of someone doing freelance work"
+            loading="lazy"
+          />
+        </div>
+        <div class="home-arrow">
+          <a href="#About">
+            <p>|</p>
+            <p>|</p>
+            <p>\/</p>
+          </a>
+        </div>
+      </section>
+      <!-- Home Section Start End -->
+
+      <!-- ======== About Section Start ======== -->
+      <section class="about" id="About">
+        <article class="about-content">
+          <img
+            src="image/pfp.png"
+            alt="Photogragh of me"
+            class="about-content__profile-pic"
+            loading="lazy"
+          />
+          <div class="about-content__info">
+            <h1>About me</h1>
+            <p>
+              I’m a freelance front-end developer with hands-on experience in
+              building high-quality web applications and solving complex UI
+              challenges. My focus is on creating seamless, user-friendly
+              experiences while ensuring clean and maintainable code.
+            </p>
+            <p>
+              On the back-end, I have experience developing efficient and
+              scalable server-side applications, handling data management, and
+              integrating APIs to bring full-stack solutions to life.
+            </p>
+            <p>
+              As a Python developer, I’ve worked with object-oriented
+              programming to build scripts, automate tasks, and develop web
+              scraping tools and desktop applications.
+            </p>
+          </div>
+        </article>
+      </section>
+      <!-- About Section Start End -->
+
+      <!-- ======== Skills Section Start ======== -->
+      <section id="Skills" class="skills">
+        <h1 class="skills-subtitle">My <span>Skills</span></h1>
+        <div class="skills-container">
+          <!-- React -->
+          <button class="skill-box" data-skill="react">
+            <img
+              src="image/logos/react.png"
+              alt="react"
+              class="skill-box__img"
+            />
+            <p>React</p>
+          </button>
+          <!-- javaScript -->
+          <button class="skill-box" data-skill="javaScript">
+            <img
+              src="image/logos/js.png"
+              alt="JavaScript"
+              class="skill-box__img"
+            />
+            <p>JavaScript</p>
+          </button>
+          <!-- html -->
+          <button class="skill-box" data-skill="html">
+            <img
+              src="image/logos/html-5.png"
+              alt="HTML"
+              class="skill-box__img"
+            />
+            <p>HTML</p>
+          </button>
+          <!-- css -->
+          <button class="skill-box" data-skill="css">
+            <img src="image/logos/css-3.png" alt="CSS" class="skill-box__img" />
+            <p>CSS</p>
+          </button>
+          <!-- api -->
+          <button class="skill-box" data-skill="api">
+            <img src="image/logos/api.png" alt="api" class="skill-box__img" />
+            <p>API</p>
+          </button>
+          <!-- database -->
+          <button class="skill-box" data-skill="database">
+            <img
+              src="image/logos/mysql.png"
+              alt="Databases"
+              class="skill-box__img"
+            />
+            <p>Databases</p>
+          </button>
+          <!-- git -->
+          <button class="skill-box" data-skill="git">
+            <img
+              src="image/logos/git.png"
+              alt="Object-oriented programming"
+              class="skill-box__img"
+            />
+            <p>Git</p>
+          </button>
+
+          <!--  Object-oriented programming-->
+          <button class="skill-box" data-skill="oop">
+            <img
+              src="image/logos/oop.png"
+              alt="Object-oriented programming"
+              class="skill-box__img"
+            />
+            <p>Object-oriented programming</p>
+          </button>
+          <!--  Python -->
+          <button class="skill-box" data-skill="python">
+            <img
+              src="image/logos/python.png"
+              alt="Python"
+              class="skill-box__img"
+            />
+            <p>Python</p>
+          </button>
+          <!--  Django -->
+          <button class="skill-box" data-skill="django">
+            <img
+              src="image/logos/django.png"
+              alt="Django"
+              class="skill-box__img"
+            />
+            <p>Django</p>
+          </button>
+          <!-- Flask -->
+          <button class="skill-box" data-skill="flask">
+            <img
+              src="image/logos/flask.png"
+              alt="Flask"
+              class="skill-box__img"
+            />
+            <p>Flask</p>
+          </button>
+          <!-- selenium -->
+          <button class="skill-box" data-skill="selenium">
+            <img
+              src="image/logos/selenium.png"
+              alt="Selenium"
+              class="skill-box__img"
+            />
+            <p>Selenium</p>
+          </button>
+        </div>
+      </section>
+      <!-- Skills Section Start End -->
+
+      <!-- ======== Projects Section Start ======== -->
+      <section id="Projects" class="prj reveal">
+        <div class="featured-projects-box reveal">
+          <h2>My <span>Projects</span></h2>
+          <div class="separator"></div>
+          <div class="projects-container">
+            <!-- Actual Projects -->
+            <div class="project project1 reveal" data-skills="python api">
+              <div class="project-details-box">
+                <!-- Project 1 -->
+                <div class="project-main-info">
+                  <span>Project #1</span>
+                  <h3>Jobs Scraper</h3>
+                  <p>
+                    A web scraping script that extracts Junior Python Developer
+                    job listings from CV-Library using BeautifulSoup and
+                    requests. Saves them to a CSV file for easy
+                    analysis.
+                  </p>
+                  <div class="project-icons">
+                    <a href="https://github.com/o10z/Python_Jobs_Scraper/" target="_blank"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <!-- <a href="" target="_blank"
+                      ><i class="fa-solid fa-camera-retro"></i
+                    ></a> -->
+                  </div>
+                </div>
+                <div class="project-tools">
+                  <p>Python, BeautifulSoup, API</p>
+                </div>
+              </div>
+              <div class="project-image-box">
+                <a href="" target="_blank" class="project-img-link">
+                  <img
+                    src="image/project/project1__job-api.webp"
+                    alt="Project Preview Image"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div
+              class="project project2 reveal"
+              data-skills="html css python javaScript database api"
+            >
+              <div class="project-details-box">
+                <div class="project-main-info">
+                  <span>Project #2</span>
+                  <h3>Allocate IT</h3>
+                  <p>
+                    Employee allocation & identification prototype developed to
+                    optimize team structures.
+                  </p>
+                  <div class="project-icons">
+                    <a href="" target="_blank"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <!-- <a href="" target="_blank"
+                      ><i class="fa-solid fa-camera-retro"></i
+                    ></a> -->
+                  </div>
+                </div>
+                <div class="project-tools">
+                  <p>HTML, CSS, Python, JavaScript, Database, API</p>
+                </div>
+              </div>
+              <div class="project-image-box">
+                <a href="" target="_blank" class="project-img-link">
+                  <img
+                    src="image/project/allocation.png"
+                    alt="Project Preview Image"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div
+              class="project project3 reveal"
+              data-skills="flask database python django html css api"
+            >
+              <div class="project-details-box">
+                <div class="project-main-info">
+                  <span>Project #3</span>
+                  <h3>Blog Website</h3>
+                  <p>
+                    Developed a blog platform with Flask, using a custom-built
+                    API that enabled seamless content updates with
+                    authentication and a database.
+                  </p>
+                  <div class="project-icons">
+                    <a
+                      href="https://github.com/o10z/RESTful-blog-start"
+                      target="_blank"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <!-- <a href="" target="_blank"
+                      ><i class="fa-solid fa-camera-retro"></i
+                    ></a> -->
+                  </div>
+                </div>
+                <div class="project-tools">
+                  <p>Flask, SQLite, Python, Django, HTML, CSS, API</p>
+                </div>
+              </div>
+              <div class="project-image-box">
+                <a href="" target="_blank" class="project-img-link">
+                  <img
+                    src="image/project/project3__blog.jpeg"
+                    alt="Project Preview Image"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div
+              class="project project4 reveal"
+              data-skills="javaScript html css"
+            >
+              <div class="project-details-box">
+                <div class="project-main-info">
+                  <span>Project #4</span>
+                  <h3>Portfolio Website</h3>
+                  <p>
+                    A fully responsive personal portfolio (the one you are
+                    looking at).
+                  </p>
+                  <div class="project-icons">
+                    <a href="" target="_blank"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <!-- <a href="" target="_blank"
+                      ><i class="fa-solid fa-camera-retro"></i
+                    ></a> -->
+                  </div>
+                </div>
+                <div class="project-tools">
+                  <p>JavaScript, HTML, CSS</p>
+                </div>
+              </div>
+              <div class="project-image-box">
+                <a href="" target="_blank" class="project-img-link">
+                  <img
+                    src="image/project/project2__website.jpg"
+                    alt="Project Preview Image"
+                  />
+                </a>
+              </div>
+            </div>
+            <!-- Project 5 -->
+            <div class="project project5 reveal" data-skills="python api">
+              <div class="project-details-box">
+                <div class="project-main-info">
+                  <span>Project #5</span>
+                  <h3>Text-to-Speech Converter</h3>
+                  <p>
+                    A Python script that converts text files into voice files
+                    using the Voice RSS API. It reads text from a file, sends
+                    the text to the API, and saves the generated speech as an
+                    .mp3 file.
+                  </p>
+                  <div class="project-icons">
+                    <a href="https://github.com/o10z/Audiobook" target="_blank"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <!-- <a href="" target="_blank"
+                      ><i class="fa-solid fa-camera-retro"></i
+                    ></a> -->
+                  </div>
+                </div>
+                <div class="project-tools">
+                  <p>Python, API</p>
+                </div>
+              </div>
+              <div class="project-image-box">
+                <a href="" target="_blank" class="project-img-link">
+                  <img
+                    src="image/project/text-to-speech.png"
+                    alt="Project Preview Image"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div
+              class="project project6 reveal"
+              data-skills="python api css html"
+            >
+              <div class="project-details-box">
+                <div class="project-main-info">
+                  <span>Project #6</span>
+                  <h3>Image Color Palette Extractor</h3>
+                  <p>
+                    A Flask web application that extracts the dominant color
+                    palette from an uploaded image using Color Thief.
+                  </p>
+                  <div class="project-icons">
+                    <a
+                      href="https://github.com/o10z/Image_Colour_Palette_Generator/"
+                      target="_blank"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <!-- <a href="" target="_blank"
+                      ><i class="fa-solid fa-camera-retro"></i
+                    ></a> -->
+                  </div>
+                </div>
+                <div class="project-tools">
+                  <p>Python, API, CSS, HTML</p>
+                </div>
+              </div>
+              <div class="project-image-box">
+                <a href="" target="_blank" class="project-img-link">
+                  <img
+                    src="image/project/Palette-Extractor.png"
+                    alt="Project Preview Image"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <!-- "Coming Soon" Placeholder -->
+            <div class="coming-soon reveal" style="display: none">
+              <div class="project-details-box">
+                <div class="project-main-info">
+                  <span>Project #?</span>
+                  <h3>Coming Soon</h3>
+                  <p>More exciting projects are on the way. Stay tuned!</p>
+                  <div class="project-icons">
+                    <a href="#" target="_blank"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <a href="#" target="_blank"
+                      ><i class="fa-solid fa-camera-retro"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="project-tools">
+                  <p>???</p>
+                </div>
+              </div>
+              <div class="project-image-box">
+                <a href="#" target="_blank" class="project-img-link">
+                  <img
+                    src="image/project/coming-soon.jpg"
+                    alt="Coming Soon Image"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section End -->
+
+      <!-- ======== Footer/contact Section Start ======== -->
+      <footer class="footer" id="Contact">
+        <section class="footer-links">
+          <ul class="footer-links__menu">
+            <a href="https://www.linkedin.com/in/ola-idebi/" target="_blank">
+              <i class="fa-brands fa-linkedin" style="color: #0077b5"></i>
+              LinkedIn
+            </a>
+            <a href="https://github.com/o10z" target="_blank">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <a href="mailto:your-email@example.com">
+              <i class="fa-solid fa-envelope"></i> Email
+            </a>
+          </ul>
+        </section>
+
+        <section class="footer-tag">
+          <p>Developed by Ola Idebi © 2025</p>
+        </section>
+      </footer>
+      <!-- ======== Footer/contact Section End ======== -->
+    </main>
+    <!-- ======== Java script ======== -->
+    <script src="js/script.js" defer></script>
+  </body>
+</html>

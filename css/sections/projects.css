@@ -1,0 +1,126 @@
+/* Projects Section */
+#Projects {
+    padding: 7rem 10% 2rem;
+    background-color: var(--color-grey);
+    border: 2px solid var(--color-black);
+}
+
+.featured-projects-box {
+    text-align: center;
+}
+
+.featured-projects-box h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.separator {
+    width: 60px;
+    height: 4px;
+    background-color: var(--primary-color);
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+/* Projects Grid Layout */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default: 3 columns */
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Individual Project Card */
+.project {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+/* Project Image */
+.project-image-box {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.project-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Project Details */
+.project-details-box {
+    padding: 20px;
+    text-align: left;
+}
+
+.project-main-info span {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.project-main-info h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.project-main-info p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Project Icons (GitHub, Demo) */
+.project-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.project-icons a {
+    font-size: 1.5rem;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.project-icons a:hover {
+    color: var(--primary-color);
+}
+
+/* Project Skills (Tools Used) */
+.project-tools {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #555;
+}
+
+/* 🛠️ Responsive Adjustments */
+@media (max-width: 1024px) {
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr); /* Change to 2 columns */
+    }
+    
+    /* Make the last project take full width */
+    .project:last-child {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: repeat(1, 1fr); /* Single column on small screens */
+    }
+
+    .project:last-child {
+        grid-column: span 1;
+    }
+}

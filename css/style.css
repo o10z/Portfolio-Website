@@ -1,0 +1,126 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap");
+
+/* Sections import */
+@import url("sections/header.css");
+@import url("sections/home.css");
+@import url("sections/about.css");
+@import url("sections/skills.css");
+@import url("sections/projects.css");
+/* @import url("sections/contact.css"); */
+@import url("sections/footer.css"); 
+
+
+/* CSS variables for reusablity across all files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --headingFont: "Playfair Display", "serif";
+  --bodyFont: "Playwrite DE Grund", "sans serif";
+
+  /* white */
+  --color-white: #fff;
+  --color-grey:  #f5f5f5;
+
+  /* grey */
+  --grey-50: #f8fafc;
+  --grey-100: #f1f5f9;
+  --grey-200: #e2e8f0;
+  --grey-300: #cbd5e1;
+  --grey-400: #94a3b8;
+  --grey-500: #64748b;
+  --grey-600: #475569;
+  --grey-700: #334155;
+  --grey-800: #1e293b;
+  --grey-900: #0f172a;
+
+  /* black */
+  --color-black: #000;
+
+  /* blue */
+  --primary-color: #0ef;
+  --primary-color-light: #90d5ff;
+  --primary-color-dark: #191970;
+}
+
+body {
+  background-color: var(--color-white);
+  font-family: var(--bodyFont);
+
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  font-family: var(--headingFont);
+  font-weight: 700;
+  line-height: 1.3;
+  text-transform: capitalize;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+
+@keyframes pointdown {
+    0%{
+        transform: translateY(0px);
+        opacity: 0%;
+    }
+    100%{
+        transform: translateY(20px);
+        opacity: 100%;
+    }
+  }
+  
+  @keyframes fade-in{
+    0%{
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100%{
+      opacity: 100;
+      transform: translateY(0px);
+    }
+  }
